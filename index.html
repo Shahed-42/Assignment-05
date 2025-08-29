@@ -3,9 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>জরুরি সেবা ডিরেক্টরি</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body { background: #f3fef6; }
+    .hero-bg {
+      background: linear-gradient(90deg, #0b5b3f 0%, #0f8a58 60%);
+      color: white;
+    }
+    .card { background: white; box-shadow: 0 4px 12px rgba(15,23,42,0.06); }
+    .pill { background: #eefaf0; color: #0b5b3f; font-weight:600; padding:4px 8px; border-radius:999px; font-size:12px; }
+    .history-item { background: #ffffff; border-radius:8px; box-shadow: 0 2px 6px rgba(2,6,23,0.06); }
+  </style>
+
 </head>
-<body>
-  
+
+<body class="min-h-screen font-sans">
+
+    <!-- Navbar -->
+  <nav class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center gap-3">
+          <!-- Logo -->
+          <div class="h-10 w-10 rounded-full bg-green-700 grid place-items-center text-white font-bold"><img src="./assets/logo.png" alt=""></div>
+          <div>
+            <div class="text-lg font-semibold">Emergency <br> Service</div>
+            <div class="text-xs text-gray-500 -mt-1"></div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="flex items-center gap-2 text-sm">
+            <button id="nav-heart" class="flex items-center gap-1">
+              <span id="nav-heart-icon" class="text-red-500 text-xl">❤</span>
+              <span id="heart-count" class="ml-1 font-medium">0</span>
+            </button>
+            <div class="flex items-center px-3 py-1 rounded-full bg-yellow-100 text-sm font-medium">
+              🪙 <span id="coin-count" class="ml-2">100</span>
+            </div>
+            <div class="flex items-center px-3 py-1 rounded-full bg-green-100 text-sm font-medium">
+              📋 <span id="copy-count" class="ml-2">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
 </body>
 </html>
