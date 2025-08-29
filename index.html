@@ -22,7 +22,7 @@
 
 <body class="min-h-screen font-sans">
 
-    <!-- Navbar -->
+    <!-- Navbar Section -->
   <nav class="bg-white shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
@@ -54,7 +54,7 @@
   </nav>
 
 
-   <!-- Hero -->
+   <!-- Hero Section -->
   <header class="hero-bg py-14">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       
@@ -68,6 +68,43 @@
     </div>
   </header>
 
+
+   <!-- Card Section -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+      
+      <section class="lg:col-span-3 space-y-6">
+
+        <div id="cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Card 1 -->
+          <article class="card p-4 rounded-lg relative">
+            <div class="flex justify-between items-start">
+              <div class="gap-3">
+                <div class="h-12 w-12 rounded-lg bg-red-50 grid place-items-center">
+                  <img src="./assets/emergency.png" alt="">
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg">জাতীয় জরুরি সেবা</h3>
+                  <div class="text-xs text-gray-500">National Emergency</div>
+                </div>
+              </div>
+
+              <button class="like-btn text-gray-400 p-1" title="পছন্দ করুন">❤</button>
+            </div>
+
+            <div class="mt-4">
+              <div class="text-2xl font-bold" data-number>999</div>
+              <div class="mt-2"><span class="pill">সার্বজনীন</span></div>
+
+              <div class="mt-4 flex gap-3">
+                <button class="copy-btn flex-1 py-2 rounded-md border border-gray-200 text-sm flex items-center justify-center gap-2" data-number-to-copy>📋 Copy</button>
+                <button class="call-btn flex-1 py-2 rounded-md bg-green-600 text-white text-sm flex items-center justify-center gap-2" data-service-name="জাতীয় জরুরি সেবা" data-service-number="999">📞 Call</button>
+              </div>
+            </div>
+          </article>
+
+
+        </div>
+      </section>
 
 
 </body>
